@@ -64,7 +64,7 @@ function validateField(field) {
 
         // Hide preview-upload and show preview-noupload
         previewUpload.style.display = "none";
-        previewNoUpload.style.display = "block";
+        previewNoUpload.style.display = "flex";
       } else {
         // Insert filename and file size inside .preview-upload
         previewUpload.innerHTML = `Filename: ${file.name}, Size: ${(
