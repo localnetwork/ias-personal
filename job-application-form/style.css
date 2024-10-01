@@ -1,0 +1,21 @@
+:root {
+  --primary: #303030;
+  --secondary: #9a0c16;
+}
+
+body {
+  font-family: "Be Vietnam Pro", sans-serif;
+  color: var(--primary);
+  font-size: 16px;
+}
+
+.bg-secondary {
+  background-color: var(--secondary);
+}
+
+.preview-noupload {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-flow: column;
+}
