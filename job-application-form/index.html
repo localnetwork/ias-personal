@@ -17,9 +17,39 @@
     />
     <link rel="stylesheet" href="./style.css" />
   </head>
-  <body class="bg-[#303030] min-h-[100vh] flex py-[50px]">
-    <div class="container max-w-[950px] mx-auto">
-      <h1 class="mb-[50px] text-white font-[800] text-[40px]">
+  <body
+    class="bg-[#303030] min-h-[100vh] relative flex px-[15px] md:px-[30px] lg:px-[50px] py-[50px]"
+  >
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      width="300"
+      height="416"
+      viewBox="0 0 259 316"
+      fill="none"
+      class="absolute top-[50px] left-[-100px] hidden md:block"
+    >
+      <path
+        d="M258.5 158C258.5 245.261 185.299 316 95.0001 316C4.70154 316 0 245.261 0 158C0 70.739 73.2014 0 163.5 0C253.799 0 258.5 70.7386 258.5 158Z"
+        fill="#D9D9D9"
+        fill-opacity="0.1"
+      ></path>
+    </svg>
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      width="600"
+      height="516"
+      viewBox="0 0 259 316"
+      fill="none"
+      class="absolute bottom-[50px] left-[-100px] hidden md:block"
+    >
+      <path
+        d="M258.5 158C258.5 245.261 185.299 316 95.0001 316C4.70154 316 0 245.261 0 158C0 70.739 73.2014 0 163.5 0C253.799 0 258.5 70.7386 258.5 158Z"
+        fill="#D9D9D9"
+        fill-opacity="0.1"
+      ></path>
+    </svg>
+    <div class="container relative z-[200] max-w-[950px] mx-auto">
+      <h1 class="mb-[50px] text-white font-[800] text-[30px] md:text-[40px]">
         Application Form
       </h1>
       <form class="" id="application-form">
@@ -38,8 +68,8 @@
             </h2>
           </div>
 
-          <div class="fields mt-[20px] grid grid-cols-2 gap-[30px]">
-            <div class="form-item">
+          <div class="fields mt-[20px] grid grid-cols-3 gap-[30px]">
+            <div class="form-item col-span-3 md:col-span-1">
               <div class="form-item-wrapper flex flex-col space-y-[10px]">
                 <label for="name"
                   >Name <span class="text-[#9B0E18]">*</span></label
@@ -52,7 +82,7 @@
                 />
               </div>
             </div>
-            <div class="form-item">
+            <div class="form-item col-span-3 md:col-span-1">
               <div class="form-item-wrapper flex flex-col space-y-[10px]">
                 <label for="email"
                   >Email <span class="text-[#9B0E18]">*</span></label
@@ -65,7 +95,21 @@
                 />
               </div>
             </div>
-            <div class="form-item col-span-2">
+            <div class="form-item col-span-3 md:col-span-1">
+              <div class="form-item-wrapper flex flex-col space-y-[10px]">
+                <label for="phone"
+                  >Phone <span class="text-[#9B0E18]">*</span></label
+                >
+                <input
+                  type="text"
+                  id="phone"
+                  name="phone"
+                  class="bg-white border px-[15px] py-[8px] min-h-[50px] rounded-[10px]"
+                />
+              </div>
+            </div>
+
+            <div class="form-item col-span-3">
               <div class="form-item-wrapper flex flex-col space-y-[10px]">
                 <label for="cover_letter"
                   >Cover Letter <span class="text-[#9B0E18]">*</span></label

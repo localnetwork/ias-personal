@@ -34,6 +34,23 @@ function validateField(field) {
     if (formItem) {
       formItem.appendChild(message);
     }
+  } else if (field.id === "phone" || field.name === "phone") {
+    // Additional validation for phone input
+    const phonePattern = /^(09|\+639)\d{9}$/;
+    if (!phonePattern.test(field.value.trim())) {
+      isValid = false;
+      const message = document.createElement("div");
+      message.className = "validation-message";
+      message.style.color = "#9A0C16";
+      message.style.marginTop = "8px"; // Add margin-top to the validation message
+      message.innerText =
+        "Invalid phone number format. Must be 11 digits (09xxxxxxxxx).";
+
+      // Append the message inside the .form-item
+      if (formItem) {
+        formItem.appendChild(message);
+      }
+    }
   }
 
   // Additional validation for file input
@@ -143,7 +160,7 @@ appForm.addEventListener("submit", function (e) {
     appForm.reset();
     // Hide the preview-upload and show the preview-noupload
     document.querySelector(".preview-upload").style.display = "none";
-    document.querySelector(".preview-noupload").style.display = "block";
+    document.querySelector(".preview-noupload").style.display = "flex";
   }
 });
 
