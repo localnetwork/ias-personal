@@ -24,6 +24,16 @@ body {
   animation: wobble 1s;
 }
 
+.remove-file {
+  background-color: var(--secondary);
+  color: #fff;
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  padding: 5px 15px;
+  border-radius: 5px;
+}
+
 @keyframes wobble {
   0% {
     transform: translateX(0%);
