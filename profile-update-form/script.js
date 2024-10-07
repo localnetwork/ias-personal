@@ -11,13 +11,14 @@ function capitalizeFirstLetter(string) {
 }
 
 const getProfileData = () => {
-  console.log("trigger");
   // Retrieve and parse profile data from local storage
   const profileData = localStorage.getItem("profileData");
   const profile = profileData ? JSON.parse(profileData) : {};
 
   // Set default values if profile data is not available
-  const name = profile?.name || "John Doe";
+  const name =
+    `${profile?.["First Name"]} ${profile?.["Middle Name"]} ${profile?.["Last Name"]}` ||
+    "John Doe";
   const bio = profile?.bio || "Your bio here.";
   const phone = profile?.phone || "09xxxxxxxxx";
   const email = profile?.email || "john@doe.com";
@@ -46,10 +47,8 @@ const getProfileData = () => {
   }
 
   // If you need to display the file, you can handle it here
-  console.log("fileDatafileDatafileData", fileData);
   if (fileData) {
     const displayFile = document.querySelector(".file");
-    console.log("displayFile.src ", displayFile);
     if (displayFile) {
       displayFile.src = fileData;
     }
@@ -164,9 +163,11 @@ function validateFields() {
   let isValid = true;
 
   for (let field of formFields) {
-    if (field.tagName === "INPUT" || field.tagName === "TEXTAREA") {
-      if (!validateField(field)) {
-        isValid = false;
+    if (field?.getAttribute("data-required") == "true") {
+      if (field.tagName === "INPUT" || field.tagName === "TEXTAREA") {
+        if (!validateField(field)) {
+          isValid = false;
+        }
       }
     }
   }
@@ -202,15 +203,17 @@ function storeFormData(callback) {
 
 // Add event listeners to fields to validate on change/input
 for (let field of formFields) {
-  if (field.tagName === "INPUT" || field.tagName === "TEXTAREA") {
-    field.addEventListener("input", function () {
-      validateField(field);
-    });
-
-    if (field.type === "file") {
-      field.addEventListener("change", function () {
+  if (field?.getAttribute("data-required") == "true") {
+    if (field.tagName === "INPUT" || field.tagName === "TEXTAREA") {
+      field.addEventListener("input", function () {
         validateField(field);
       });
+
+      if (field.type === "file") {
+        field.addEventListener("change", function () {
+          validateField(field);
+        });
+      }
     }
   }
 }

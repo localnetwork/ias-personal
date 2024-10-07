@@ -99,41 +99,73 @@
         <form id="profile-update" class="grid grid-cols-3 gap-[15px]">
           <div class="form-item col-span-3 md:col-span-1">
             <div class="form-item-wrapper flex flex-col space-y-[10px]">
-              <label for="name"
-                >Name <span class="text-[#9B0E18]">*</span></label
+              <label for="first_name"
+                >First Name <span class="text-[#9B0E18]">*</span></label
               >
               <input
                 type="text"
-                id="name"
-                name="name"
+                id="first_name"
+                name="First Name"
                 class="bg-white border border-[#c0c0c0] px-[15px] py-[8px] min-h-[50px] rounded-[10px]"
+                data-required="true"
               />
             </div>
           </div>
           <div class="form-item col-span-3 md:col-span-1">
             <div class="form-item-wrapper flex flex-col space-y-[10px]">
-              <label for="email"
-                >Email <span class="text-[#9B0E18]">*</span></label
-              >
+              <label for="middle_name">Middle Name</label>
               <input
-                type="email"
-                id="email"
-                name="email"
+                type="text"
+                id="middle_name"
+                name="Middle Name"
                 class="bg-white border border-[#c0c0c0] px-[15px] py-[8px] min-h-[50px] rounded-[10px]"
+                data-required="false"
               />
             </div>
           </div>
           <div class="form-item col-span-3 md:col-span-1">
             <div class="form-item-wrapper flex flex-col space-y-[10px]">
-              <label for="phone"
-                >Phone <span class="text-[#9B0E18]">*</span></label
+              <label for="last_name"
+                >Last Name <span class="text-[#9B0E18]">*</span></label
               >
               <input
                 type="text"
-                id="phone"
-                name="phone"
+                id="last_name"
+                name="Last Name"
                 class="bg-white border border-[#c0c0c0] px-[15px] py-[8px] min-h-[50px] rounded-[10px]"
+                data-required="true"
               />
+            </div>
+          </div>
+
+          <div class="col-span-3 grid grid-cols-2 gap-[30px]">
+            <div class="form-item md:col-span-1">
+              <div class="form-item-wrapper flex flex-col space-y-[10px]">
+                <label for="email"
+                  >Email <span class="text-[#9B0E18]">*</span></label
+                >
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  class="bg-white border border-[#c0c0c0] px-[15px] py-[8px] min-h-[50px] rounded-[10px]"
+                  data-required="true"
+                />
+              </div>
+            </div>
+            <div class="form-item md:col-span-1">
+              <div class="form-item-wrapper flex flex-col space-y-[10px]">
+                <label for="phone"
+                  >Phone <span class="text-[#9B0E18]">*</span></label
+                >
+                <input
+                  type="text"
+                  id="phone"
+                  name="phone"
+                  class="bg-white border border-[#c0c0c0] px-[15px] py-[8px] min-h-[50px] rounded-[10px]"
+                  data-required="true"
+                />
+              </div>
             </div>
           </div>
           <div class="form-item col-span-3">
@@ -144,6 +176,7 @@
                 id="bio"
                 name="bio"
                 class="bg-white border border-[#c0c0c0] px-[15px] py-[8px] min-h-[150px] rounded-[10px]"
+                data-required="true"
               ></textarea>
             </div>
           </div>
@@ -203,6 +236,7 @@
                   type="file"
                   name="File"
                   id="file"
+                  data-required="true"
                   class="absolute top-0 left-0 opacity-0 w-full h-full z-[2]"
                 />
               </div>
