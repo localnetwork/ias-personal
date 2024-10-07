@@ -20,6 +20,42 @@ body {
   flex-flow: column;
 }
 
+.remove-file {
+  background-color: var(--secondary);
+  color: #fff;
+  position: absolute;
+  top: -40px;
+  right: 15px;
+  padding: 5px 15px;
+  border-radius: 5px;
+}
+
+.preview-file {
+  width: 100%;
+  margin-bottom: 10px;
+  padding-bottom: 10px;
+}
+.preview-file .file-type {
+  background-color: #414141;
+  color: white;
+  display: inline-block;
+  font-size: 12px;
+  padding: 3px 15px;
+  border-radius: 5px;
+}
+.preview-file .size {
+  font-size: 12px;
+}
+.preview-file .title {
+  margin-bottom: 5px;
+}
+.preview-file:not(:last-of-type) {
+  border-bottom: 1px solid #ddd;
+}
+
+.preview-upload {
+  flex-wrap: wrap;
+}
 .animate-wobble {
   animation: wobble 1s;
 }
