@@ -16,9 +16,9 @@ const getProfileData = () => {
   const profile = profileData ? JSON.parse(profileData) : {};
 
   // Set default values if profile data is not available
-  const name =
-    `${profile?.["First Name"]} ${profile?.["Middle Name"]} ${profile?.["Last Name"]}` ||
-    "John Doe";
+  const name = profile?.["First Name"]
+    ? `${profile?.["First Name"]} ${profile?.["Middle Name"]} ${profile?.["Last Name"]}`
+    : "John Doe";
   const bio = profile?.bio || "Your bio here.";
   const phone = profile?.phone || "09xxxxxxxxx";
   const email = profile?.email || "john@doe.com";
