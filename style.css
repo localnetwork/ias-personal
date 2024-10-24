@@ -1,0 +1,75 @@
+:root {
+  --primary: #303030;
+  --secondary: #9a0c16;
+}
+
+body {
+  font-family: "Rubik", sans-serif;
+  color: var(--primary);
+  font-size: 16px;
+}
+
+.font-secondary {
+  font-family: "Be Vietnam Pro", sans-serif;
+}
+.container {
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.text-primary {
+  color: var(--primary);
+}
+.text-secondary {
+  color: var(--secondary);
+}
+
+.bg-primary {
+  background-color: var(--primary);
+}
+
+/** 
+  ** Icons
+  **/
+
+.icon {
+  background-size: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.icon-fb {
+  background-image: url("./icons/fb.svg");
+}
+.icon-linkedin {
+  background-image: url("./icons/linkedin.svg");
+}
+.icon-github {
+  background-image: url("./icons/github.svg");
+}
+.icon-drupal {
+  background-image: url("./icons/drupal.svg");
+}
+.icon-youtube {
+  background-image: url("./icons/youtube.svg");
+}
+
+@media (max-width: 1535px) {
+  .container {
+    max-width: 100% !important;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+}
+@media (min-width: 1536px) {
+  .container {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+}

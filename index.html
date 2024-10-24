@@ -3,19 +3,951 @@
   <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <title></title>
-    <meta name="description" content="" />
+    <title>Dio.cv</title>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="stylesheet" href="" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="icon" href="./assets/favicon.png" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" type="text/css" media="screen" href="./style.css" />
+    <meta property="og:title" content="Dio.dev" />
+    <meta
+      property="og:description"
+      content="Let's build something awesome together."
+    />
+    <meta
+      name="og:image"
+      content="https://localnetwork.github.io/portfolio-cv/assets/og_image.png"
+    />
   </head>
   <body>
-    Sample HTML only
+    <header
+      class="sticky z-[10000] bg-[#F5F4F1] py-[10px] top-0 shadow-sm lg:shadow-md shadow-[#585757] lg:shadow-[#999999]"
+    >
+      <div class="container">
+        <div class="flex justify-between">
+          <div class="logo">
+            <a href="/">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="160"
+                height="60"
+                viewBox="0 0 269 100"
+                fill="none"
+                class="max-w-[160px]"
+              >
+                <path
+                  d="M103.9 63C103.533 63 103.217 62.8833 102.95 62.65C102.717 62.3833 102.6 62.0667 102.6 61.7V38.3C102.6 37.9333 102.717 37.6333 102.95 37.4C103.217 37.1333 103.533 37 103.9 37H111.3C111.667 37 111.983 37.1333 112.25 37.4C112.517 37.6333 112.65 37.9333 112.65 38.3V61.7C112.65 62.0667 112.517 62.3833 112.25 62.65C111.983 62.8833 111.667 63 111.3 63H103.9ZM104 33.75C103.633 33.75 103.317 33.6333 103.05 33.4C102.817 33.1333 102.7 32.8167 102.7 32.45V27.2C102.7 26.8333 102.817 26.5167 103.05 26.25C103.317 25.9833 103.633 25.85 104 25.85H111.2C111.567 25.85 111.883 25.9833 112.15 26.25C112.417 26.5167 112.55 26.8333 112.55 27.2V32.45C112.55 32.8167 112.417 33.1333 112.15 33.4C111.883 33.6333 111.567 33.75 111.2 33.75H104ZM131.177 63.5C128.244 63.5 125.761 63.0667 123.727 62.2C121.727 61.3333 120.194 60.0667 119.127 58.4C118.061 56.7 117.461 54.6667 117.327 52.3C117.294 51.6 117.277 50.8333 117.277 50C117.277 49.1667 117.294 48.4 117.327 47.7C117.461 45.3 118.094 43.2667 119.227 41.6C120.361 39.9333 121.927 38.6667 123.927 37.8C125.961 36.9333 128.377 36.5 131.177 36.5C133.977 36.5 136.377 36.9333 138.377 37.8C140.411 38.6667 141.994 39.9333 143.127 41.6C144.261 43.2667 144.894 45.3 145.027 47.7C145.094 48.4 145.127 49.1667 145.127 50C145.127 50.8333 145.094 51.6 145.027 52.3C144.894 54.6667 144.294 56.7 143.227 58.4C142.161 60.0667 140.611 61.3333 138.577 62.2C136.577 63.0667 134.111 63.5 131.177 63.5ZM131.177 56.45C132.411 56.45 133.261 56.0833 133.727 55.35C134.194 54.6167 134.461 53.5167 134.527 52.05C134.561 51.55 134.577 50.8667 134.577 50C134.577 49.1333 134.561 48.45 134.527 47.95C134.461 46.5167 134.194 45.4333 133.727 44.7C133.261 43.9333 132.411 43.55 131.177 43.55C129.977 43.55 129.144 43.9333 128.677 44.7C128.211 45.4333 127.927 46.5167 127.827 47.95C127.794 48.45 127.777 49.1333 127.777 50C127.777 50.8667 127.794 51.55 127.827 52.05C127.927 53.5167 128.211 54.6167 128.677 55.35C129.144 56.0833 129.977 56.45 131.177 56.45ZM176.723 63.5C174.223 63.5 171.973 63.0667 169.973 62.2C168.007 61.3 166.423 60 165.223 58.3C164.057 56.5667 163.407 54.4833 163.273 52.05C163.24 51.5167 163.223 50.85 163.223 50.05C163.223 49.25 163.24 48.5667 163.273 48C163.407 45.5333 164.057 43.45 165.223 41.75C166.39 40.0167 167.973 38.7167 169.973 37.85C171.973 36.95 174.223 36.5 176.723 36.5C179.19 36.5 181.29 36.85 183.023 37.55C184.79 38.25 186.207 39.1167 187.273 40.15C188.373 41.1833 189.19 42.2167 189.723 43.25C190.257 44.2833 190.54 45.15 190.573 45.85C190.607 46.2167 190.473 46.5333 190.173 46.8C189.907 47.0667 189.607 47.2 189.273 47.2H181.223C180.857 47.2 180.573 47.1167 180.373 46.95C180.173 46.75 179.99 46.4833 179.823 46.15C179.49 45.4167 179.107 44.8833 178.673 44.55C178.24 44.1833 177.657 44 176.923 44C175.89 44 175.123 44.3667 174.623 45.1C174.123 45.8 173.857 46.85 173.823 48.25C173.757 49.65 173.757 50.8333 173.823 51.8C173.89 53.2333 174.157 54.3 174.623 55C175.123 55.6667 175.89 56 176.923 56C177.757 56 178.373 55.8333 178.773 55.5C179.173 55.1333 179.523 54.5833 179.823 53.85C179.957 53.5167 180.123 53.2667 180.323 53.1C180.557 52.9 180.857 52.8 181.223 52.8H189.273C189.607 52.8 189.907 52.9333 190.173 53.2C190.473 53.4667 190.607 53.7833 190.573 54.15C190.54 54.6167 190.357 55.25 190.023 56.05C189.723 56.8167 189.24 57.6333 188.573 58.5C187.94 59.3333 187.09 60.1333 186.023 60.9C184.957 61.6667 183.657 62.3 182.123 62.8C180.59 63.2667 178.79 63.5 176.723 63.5ZM203.064 63C202.531 63 202.148 62.8667 201.914 62.6C201.714 62.3333 201.531 62.05 201.364 61.75L191.814 38.55C191.781 38.4167 191.764 38.2833 191.764 38.15C191.764 37.85 191.881 37.5833 192.114 37.35C192.348 37.1167 192.614 37 192.914 37H200.014C200.481 37 200.831 37.1333 201.064 37.4C201.298 37.6333 201.464 37.8667 201.564 38.1L206.364 51.65L211.214 38.1C211.314 37.8667 211.481 37.6333 211.714 37.4C211.948 37.1333 212.298 37 212.764 37H219.814C220.148 37 220.414 37.1167 220.614 37.35C220.848 37.5833 220.964 37.85 220.964 38.15C220.964 38.2833 220.948 38.4167 220.914 38.55L211.414 61.75C211.281 62.05 211.081 62.3333 210.814 62.6C210.581 62.8667 210.214 63 209.714 63H203.064Z"
+                  fill="#303030"
+                />
+                <path
+                  d="M150.429 63C150.062 63 149.745 62.8833 149.479 62.65C149.245 62.3833 149.129 62.0667 149.129 61.7V54.2C149.129 53.8333 149.245 53.5167 149.479 53.25C149.745 52.9833 150.062 52.85 150.429 52.85H157.929C158.295 52.85 158.612 52.9833 158.879 53.25C159.145 53.5167 159.279 53.8333 159.279 54.2V61.7C159.279 62.0667 159.145 62.3833 158.879 62.65C158.612 62.8833 158.295 63 157.929 63H150.429Z"
+                  fill="#9A0C16"
+                />
+                <g filter="url(#filter0_d_2_25)">
+                  <path
+                    d="M88 43.2579C88 67.1486 75.67 85.9139 51.396 85.9139C27.122 85.9139 -24.5561 112.989 24.2434 52.9259C24.2434 29.0352 19.7741 0 44.0481 0C68.322 0 88 19.3672 88 43.2579Z"
+                    fill="#303030"
+                  />
+                  <path
+                    d="M24.6315 53.2412L24.7434 53.1034V52.9259C24.7434 49.9327 24.6734 46.8603 24.5986 43.7804C24.5932 43.555 24.5877 43.3295 24.5822 43.1041C24.5125 40.2469 24.4427 37.3875 24.4244 34.5741C24.3847 28.4995 24.5852 22.6696 25.5345 17.5959C26.4843 12.5193 28.1745 8.2531 31.0724 5.2577C33.9553 2.27773 38.0878 0.5 44.0481 0.5C68.0534 0.5 87.5 19.6508 87.5 43.2579C87.5 55.1238 84.4374 65.6674 78.4097 73.2334C72.3934 80.7849 63.39 85.4139 51.396 85.4139C45.4142 85.4139 37.8081 87.0381 30.5014 88.5984C30.3161 88.638 30.1309 88.6775 29.946 88.7169C22.4199 90.3232 15.2928 91.8079 10.4545 91.445C8.0342 91.2634 6.31987 90.627 5.38036 89.447C4.4542 88.2837 4.16605 86.4414 4.967 83.553C5.76639 80.6703 7.62482 76.8503 10.8247 71.8579C14.0207 66.8714 18.5382 60.741 24.6315 53.2412Z"
+                    stroke="#9A0C16"
+                  />
+                </g>
+                <path
+                  d="M73 40.5C73 51.247 64.0686 60 53 60C41.9315 60 33 51.247 33 40.5C33 29.753 41.9315 21 53 21C64.0686 21 73 29.753 73 40.5Z"
+                  fill="#D9D9D9"
+                  stroke="#9A0C16"
+                  stroke-width="2"
+                />
+                <defs>
+                  <filter
+                    id="filter0_d_2_25"
+                    x="0"
+                    y="0"
+                    width="92"
+                    height="100"
+                    filterUnits="userSpaceOnUse"
+                    color-interpolation-filters="sRGB"
+                  >
+                    <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                    <feColorMatrix
+                      in="SourceAlpha"
+                      type="matrix"
+                      values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+                      result="hardAlpha"
+                    />
+                    <feOffset dy="4" />
+                    <feGaussianBlur stdDeviation="2" />
+                    <feComposite in2="hardAlpha" operator="out" />
+                    <feColorMatrix
+                      type="matrix"
+                      values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"
+                    />
+                    <feBlend
+                      mode="normal"
+                      in2="BackgroundImageFix"
+                      result="effect1_dropShadow_2_25"
+                    />
+                    <feBlend
+                      mode="normal"
+                      in="SourceGraphic"
+                      in2="effect1_dropShadow_2_25"
+                      result="shape"
+                    />
+                  </filter>
+                </defs>
+              </svg>
+            </a>
+          </div>
+          <div class="flex font-[800] items-center gap-[15px] text-[20px]">
+            <span class="hidden md:block">Menu</span>
+            <span
+              class="cursor-pointer bg-[#9A0C16] w-[50px] h-[50px] flex flex-col items-center justify-center p-[10px] rounded-full"
+            >
+              <span class="bg-white h-[4px] mb-[7px] w-full block"></span>
+              <span class="bg-white h-[4px] w-full block"></span>
+            </span>
+          </div>
+        </div>
+      </div>
+    </header>
 
-    <div>
-      <a href="./job-application-form">View Job Application Form</a>
-    </div>
-    <div>
-      <a href="./profile-update-form">View Profile Update Form</a>
-    </div>
+    <main>
+      <section
+        class="hero py-[50px] bg-[#9A0C16] lg:bg-[#F5F4F1] relative overflow-hidden"
+      >
+        <svg
+          class="shape-2 absolute top-[-100px] right-[-100px] hidden lg:block"
+          xmlns="http://www.w3.org/2000/svg"
+          width="466"
+          height="447"
+          viewBox="0 0 466 447"
+          fill="none"
+        >
+          <path
+            d="M466 213.868C466 331.983 378.724 427.735 271.063 427.735C163.403 427.735 0 494.228 0 376.112C0 257.996 163.403 0 271.063 0C378.724 0 466 95.7518 466 213.868Z"
+            fill="#9A0C16"
+            fill-opacity="0.05"
+          />
+        </svg>
+        <div class="container">
+          <div class="flex">
+            <!-- SHOW DESKTOP -->
+            <div
+              class="w-[324px] hidden lg:block lg:w-[424px] pl-[20px] relative"
+            >
+              <div
+                class="image lg:min-h-[348px] min-w-[324px] lg:min-w-[424px] relative"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="424"
+                  height="348"
+                  viewBox="0 0 424 348"
+                  fill="none"
+                  class="relative w-full h-full"
+                >
+                  <path
+                    d="M424 267.831C424 358.247 232.843 346.958 150 346.958C67.1573 346.958 0 273.662 0 183.247C0 92.8323 115.657 0.436768 198.5 0.436768C281.343 0.436768 424 177.416 424 267.831Z"
+                    fill="#303030"
+                    fill-opacity="0.1"
+                  />
+                </svg>
+                <div
+                  class="absolute top-0 left-0 w-full h-full flex items-center justify-center"
+                >
+                  <img
+                    class="w-[150px] lg:w-[250px] relative left-[-20px] top-[5px]"
+                    src="./assets/HeroImage.png"
+                  />
+                </div>
+              </div>
+
+              <div class="mt-[50px]">
+                <h2 class="font-[800] text-[30px] text-black opacity-70">
+                  Connect with me:
+                </h2>
+
+                <div class="mt-[30px] flex items-center gap-[10px]">
+                  <div class="icon icon-fb w-[43px] h-[43px]"></div>
+                  <div class="icon icon-linkedin w-[43px] h-[43px]"></div>
+                  <div class="icon icon-github w-[43px] h-[43px]"></div>
+                  <div class="icon icon-drupal w-[43px] h-[43px]"></div>
+                  <div class="icon icon-youtube w-[43px] h-[43px]"></div>
+                </div>
+              </div>
+            </div>
+            <!-- END SHOW DESKTOP -->
+
+            <div
+              class="w-full text-center lg:text-left lg:w-[calc(100%-424px)] lg:pl-[100px] lg:pt-[80px]"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="210"
+                height="246"
+                viewBox="0 0 210 246"
+                fill="none"
+                class="absolute top-[-10px] left-[-80px] lg:hidden"
+              >
+                <path
+                  d="M209.268 189.58C209.268 253.684 114.921 245.68 74.0334 245.68C33.1459 245.68 0 193.714 0 129.611C0 65.5076 57.0834 0 97.9709 0C138.858 0 209.268 125.477 209.268 189.58Z"
+                  fill="#303030"
+                  fill-opacity="0.1"
+                />
+              </svg>
+
+              <div class="block lg:hidden mb-[25px]">
+                <img
+                  class="w-[100px] lg:w-[250px] mx-auto relative top-[5px]"
+                  src="./assets/HeroImage.png"
+                />
+              </div>
+
+              <h1
+                class="text-white lg:text-[#303030] text-[30px] lg:text-[clamp(25px,5vw,80px)] font-[800]"
+              >
+                Diome Nike Potot
+              </h1>
+              <p
+                class="block lg:hidden text-[#F1848C] text-[16px] font-[800] mt-[15px] font-secondary"
+              >
+                BSIT-3A (Web Dev)
+              </p>
+
+              <p
+                class="hidden lg:block text-[#303030] opacity-60 text-[clamp(18px,1024px,32px)] mt-[15px] font-secondary"
+              >
+                BSIT-3A (Web Development)
+              </p>
+
+              <div class="mt-[30px] lg:mt-[50px]">
+                <a
+                  href="#"
+                  class="bg-[#F5F4F1] border border-[1px] border-[#ddd] text-[#303030] lg:text-white lg:bg-[#9A0C16] inline-flex gap-[15px] justify-center items-center py-[5px] pr-[10px] px-[15px] lg:py-[15px] lg:pl-[35px] lg:pr-[25px] rounded-[50px] font-[800] lg:font-bold text-[12px] lg:text-[24px]"
+                >
+                  Download Resume
+                  <div class="relative pl-[10px] lg:pl-[15px]">
+                    <span
+                      class="h-[calc(100%+10px)] lg:h-[calc(100%+30px)] w-[1px] bg-[#ddd] lg:bg-white absolute top-[-5px] lg:top-[-15px] left-0"
+                    ></span>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      xmlns:xlink="http://www.w3.org/1999/xlink"
+                      width="40"
+                      height="44"
+                      viewBox="0 0 40 44"
+                      fill="none"
+                      class="brightness-[.2] lg:brightness-100 w-[20px] lg:w-[40px] h-auto"
+                    >
+                      <rect
+                        y="-0.00602722"
+                        width="40"
+                        height="43.6563"
+                        fill="url(#pattern0_27_65)"
+                      />
+                      <defs>
+                        <pattern
+                          id="pattern0_27_65"
+                          patternContentUnits="objectBoundingBox"
+                          width="1"
+                          height="1"
+                        >
+                          <use
+                            xlink:href="#image0_27_65"
+                            transform="matrix(0.0170532 0 0 0.015625 -0.0457033 0)"
+                          />
+                        </pattern>
+                        <image
+                          id="image0_27_65"
+                          width="64"
+                          height="64"
+                          xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAACXBIWXMAAA7DAAAOwwHHb6hkAAAAGXRFWHRTb2Z0d2FyZQB3d3cuaW5rc2NhcGUub3Jnm+48GgAAAipJREFUeJztmr9qFFEUxr+rqxIQmwQrrW0CSUD0CSyEYJMigS3sfAffwEas3Vp9CP8UgoWVLIiWKkoQ27hRVPBnkQuZnZ3dubM7d84Gzw+muLPnfvOdb5nLXGYkx3Ecx3Ecx+kUYAf4Go8daz+dA+xzzL6Vj2B1YYAxIyGYeDllcdFlwgOwNmCNB2BtwBoPwNqANR6AtQFrPABrA9Z4ANYGrPEArA1Y4wFYG7DGA7A2YI0HYG0gBaAHrOTQbj0A4ArwChgCuy3o7Un6JukAuLu4w8wALxjnPtCrqBuj4vdenFvkD3Chm07mBHhTbg54DqyV6qYGAKzFOWUOct0KrQHcAA4rzH8Etgp1lQEAW7G2zCFwy6Khxu/wgM0pTfwA+rFmIgCgH2uqwtvM5bdOcK53eMAq8KyiGYAHieeIGqu5/c4SnPinGsw9DdwD/k5pro6HwJmu/GYTBPaAUYPGfwK3rfxmEQQ2gA8JzX8Grlr7zSLI0brwdEbzL4GLy+I3iyDT14XG93sXftsXPNbdBT7FY+FH5oJuI7+1X2WURay+5Eilqd8TsRvMSUoAo+IAuJTJy8IAl0unvtfNSQngfWk8WMYQYvOD0ul3dfMmtqkVPJJ0rTC+KelLi+thTh7XFaQsguckvZaUtBlZIoaSrocQfs8qqr0FQgi/JG1HwZPCUNJ2XfNSgw8lgbOS7kjqS1qXdH5ue3kYSXor6YmkQUrzjuM4juM4zv/MP07O0xGb9GqnAAAAAElFTkSuQmCC"
+                        />
+                      </defs>
+                    </svg>
+                  </div>
+                </a>
+
+                <div
+                  class="mt-[30px] pb-[80px] flex lg:hidden justify-center brightness-[5] items-center gap-[10px]"
+                >
+                  <div class="icon icon-fb w-[30px] h-[30px]"></div>
+                  <div class="icon icon-linkedin w-[30px] h-[30px]"></div>
+                  <div class="icon icon-github w-[30px] h-[30px]"></div>
+                  <div class="icon icon-drupal w-[30px] h-[30px]"></div>
+                  <div class="icon icon-youtube w-[30px] h-[30px]"></div>
+                </div>
+                <p
+                  class="mt-[20px] absolute bottom-[5px] lg:bottom-0 lg:relative left-0 right-0 flex flex-col items-center justify-center lg:justify-start lg:items-start text-white lg:text-[#303030] lg:font-[800] text-[10px] lg:text-[24px]"
+                >
+                  <span class="block lg:hidden"> Scroll for more </span>
+                  <span class="hidden lg:block"> Scroll down for more </span>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    aria-hidden="true"
+                    data-slot="icon"
+                    class="size-6 lg:hidden"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="m19.5 8.25-7.5 7.5-7.5-7.5"
+                    ></path>
+                  </svg>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section
+        class="bg-white md:bg-[#303030] text-[#303030] md:text-white py-[20px] md:py-[50px] lg:py-[100px] relative overflow-hidden"
+      >
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="187"
+          height="168"
+          viewBox="0 0 187 168"
+          fill="none"
+          class="absolute top-[-20px] right-[-20px] z-[0] md:hidden"
+        >
+          <path
+            d="M186.204 84C186.204 130.392 138.298 168 79.2036 168C20.1092 168 92.2036 71 48.7035 84C-48.5215 130.936 20.1092 0 79.2036 0C138.298 0 186.204 37.6081 186.204 84Z"
+            fill="#FFE2E2"
+            fill-opacity="0.4"
+          />
+        </svg>
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="259"
+          height="316"
+          viewBox="0 0 259 316"
+          fill="none"
+          class="absolute bottom-[50px] left-[-100px] hidden md:block"
+        >
+          <path
+            d="M258.5 158C258.5 245.261 185.299 316 95.0001 316C4.70154 316 0 245.261 0 158C0 70.739 73.2014 0 163.5 0C253.799 0 258.5 70.7386 258.5 158Z"
+            fill="#D9D9D9"
+            fill-opacity="0.1"
+          />
+        </svg>
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="355"
+          height="403"
+          viewBox="0 0 355 403"
+          fill="none"
+          class="shape-2 absolute top-[-180px] right-[-150px] hidden md:block"
+        >
+          <path
+            d="M354.288 196.212C354.288 303.511 181.432 402.717 61.8159 402.717C-57.7998 402.717 33.0103 355.62 33.0103 248.321C33.0103 141.022 -46.8137 0 72.802 0C192.418 0 354.288 88.913 354.288 196.212Z"
+            fill="#D9D9D9"
+            fill-opacity="0.1"
+          />
+        </svg>
+        <div class="container relative">
+          <h2
+            class="font-[800] text-[20px] md:text-[50px] mb-[20px] md:mb-[80px]"
+          >
+            About <span class="hidden md:inline">Me</span>
+          </h2>
+          <p
+            class="md:font-[800] md:leading-[45px] font-secondary text-[12px] md:text-[27px]"
+          >
+            I'm Diome, a web developer from the Philippines. With 8 years of
+            experience, I specialize in using Drupal and Next.js for my
+            projects. Let's build something awesome together!
+          </p>
+          <div class="mt-[20px] md:mt-[80px]">
+            <a
+              href="#"
+              class="bg-[#9A0C16] border border-[#ddd] md:border-0 z-[20] relative md:bg-opacity-70 inline-flex gap-[15px] py-[7px] items-center text-white pr-[5px] px-[15px] md:py-[15px] md:pl-[35px] md:pr-[25px] rounded-[50px] font-[800] md:font-bold text-[12px] md:text-[24px]"
+            >
+              Work with me
+              <div class="relative ml-[10px] md:ml-0 md:pl-[15px]">
+                <span
+                  class="h-[calc(100%+14px)] md:h-[calc(100%+30px)] w-[1px] bg-[#ddd] md:bg-white absolute top-[-7px] md:top-[-15px] left-0"
+                ></span>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  aria-hidden="true"
+                  data-slot="icon"
+                  class="size-6 md:hidden"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="m8.25 4.5 7.5 7.5-7.5 7.5"
+                  ></path>
+                </svg>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  xmlns:xlink="http://www.w3.org/1999/xlink"
+                  width="53"
+                  height="47"
+                  class="max-w-[40px] h-auto hidden md:block"
+                  viewBox="0 0 53 47"
+                  fill="none"
+                >
+                  <rect
+                    x="0.903137"
+                    width="51.4084"
+                    height="47"
+                    fill="url(#pattern0_27_67)"
+                  />
+                  <defs>
+                    <pattern
+                      id="pattern0_27_67"
+                      patternContentUnits="objectBoundingBox"
+                      width="1"
+                      height="1"
+                    >
+                      <use
+                        xlink:href="#image0_27_67"
+                        transform="matrix(0.015625 0 0 0.0170906 0 -0.046898)"
+                      />
+                    </pattern>
+                    <image
+                      id="image0_27_67"
+                      width="64"
+                      height="64"
+                      xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAACXBIWXMAAA7DAAAOwwHHb6hkAAAAGXRFWHRTb2Z0d2FyZQB3d3cuaW5rc2NhcGUub3Jnm+48GgAAA8VJREFUeJztmkuPFGUUht/DgMwEtpgYlq74B7pW3Lga2RoX+gck7jFoiJAMjCB4wbsEEOUmF9EeEgP8Al3Ixo0LNTHeNiQYMjws6rTpbs9Xl+6aqm6m3qQX0/Wdt877dGfq61MlderUqVOnTp06rVPZ4B/Ao5KekbS9nXbWXL9I6pnZ7/03TJKAOUmvSXpF0uZ2emtM/0pakvSqma0aYJI+k/R8u301rhNm9oIBuySdbbublrRowHVJTwUHb0vaLWm12Z5q15ykZUk7gmM9Af+Q1hfAxoYbrk3AHHAiJ99fGnnjfrDo81mEAGz03kc1lHEUwE3gk6DoS2BT26HKyj/5k0GO08CtPADfAQa8ExSfnQUIOeE/AjZ4xjQAN5lJCB7+VCq8rykG4AsNeDswuwJM3WYJ2AScC/r9sB/e15UD4IsNODbtEDz8+aLwvrY8AC+Yagg54T8YDe/rqwHwohSEq21CAB4BLpQN7zXVAXihAUeDk30NzK9dzGQ/qfDvp8J73XgAvNiAt9qG4OEvBn0czwvvteMDcIMUhGtNQPDwX40T3usnA+AmBhxpGkJBeCt2qAmAGxlwOGjmm7WA4OEvBed7r2x496kHgJs1AiEn/LtVwrtXfQDc0IA3g+a+BRaq+gX+m4HLdYR3v3oBDBi/UTeEnPDL44R3z7UB4OYRhN44EDz8lSj8hD0OASi8bFRUND7bKekasKWsiQO7LOnZkucYX3V9A4B9wac1qBvA1hI+C8BKgdfBCfoc+gbUAgBYCpr8OXjveh4EYKuvKeO1NBUAgENBcz2yT/JAcOx74InA50ngh2D9AffqBccOtQaA7PK3HDQ19J8f2B+sAfiRbEZ3GridWLN/wGfBvUdV6YpQCwDSG6BwKwzsIZ44p3Qf2BP4zPs5RnW4LISJAZD+HZD7ixDYBfxWIvyvwHM5PvN+rlEdKQNhIgCkZwKlBiPAFmA32Wj63kD9PbKR/MuUuFyS7RGuBn0cLYIwNgBqHo2Rjagf81fl/QjpjdKxPAhjAWDKpkEDfaUGI8mpUGUAOeFbnQcO9FdpNFYJAFM+Ee6LCpPh0gBmJXxfORCq3xghfVfoHLN5a+w/CIUAmNH7gn0x4c3Rm8DHQfHDcnv8FAW3x1eDojPM7gMSZ4I8QxkF/B0s6uthf0TmTwNWJD0d1K+Lh6QMWJR0vtmepkaLG8zsgrIHJdebPjWzi/0NwouSXpd0t8WGmtJdSXslvST9/2HpbcqmuI9LKj3FnRHdkfSTpBUz+6PtZjp16tSpU6dOnVrXA3NHZmXGCMaKAAAAAElFTkSuQmCC"
+                    />
+                  </defs>
+                </svg>
+              </div>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <section
+        class="py-[30px] md:py-[50px] lg:py-[80px] bg-[#303030] md:bg-[#9A0C16] relative overflow-hidden"
+      >
+        <div class="flex justify-center w-full absolute top-[-100px]">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="673"
+            height="276"
+            viewBox="0 0 673 276"
+            fill="none"
+            class="hidden md:block"
+          >
+            <path
+              d="M673 157.5C673 233.715 276.307 276 178 276C79.6933 276 0 214.215 0 138C0 61.7847 79.6933 0 178 0C276.307 0 673 81.2847 673 157.5Z"
+              fill="#D9D9D9"
+              fill-opacity="0.1"
+            />
+          </svg>
+        </div>
+
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="355"
+          height="403"
+          viewBox="0 0 355 403"
+          fill="none"
+          class="absolute top-[-20px] right-[-100px] md:hidden"
+        >
+          <path
+            d="M354.288 196.212C354.288 303.511 181.432 402.717 61.8159 402.717C-57.7998 402.717 33.0103 355.62 33.0103 248.321C33.0103 141.022 -46.8137 0 72.802 0C192.418 0 354.288 88.913 354.288 196.212Z"
+            fill="#D9D9D9"
+            fill-opacity="0.1"
+          />
+        </svg>
+        <div class="container">
+          <h2
+            class="font-[800] text-white text-[20px] md:text-[50px] mb-[20px] md:mb-[50px] lg:mb-[100px]"
+          >
+            Experiences
+          </h2>
+          <div
+            class="flex flex-wrap mt-[30px] md:mt-[100px] lg:mt-[150px] mx-[-15px]"
+          >
+            <!-- First Card -->
+
+            <div
+              class="item w-full px-[15px] md:max-w-[33.33%] mb-[30px] md:mb-0 w-full relative"
+            >
+              <div
+                class="item-wrapper shadow-md shadow-[#333] pt-[30px] shadow-md md:shadow-none min-h-[200px] md:h-[400px] relative bg-[#F5F4F1] p-[30px] rounded-[10px] md:rounded-[20px]"
+              >
+                <div
+                  class="item-header w-full absolute top-[-30px] text-[24px] font-[800]"
+                >
+                  <span
+                    class="relative z-[2] text-[20px] mt-[15px] underline hidden md:block"
+                    >1st year</span
+                  >
+                  <span
+                    class="block absolute left-[150px] top-[-50px] w-[30px] h-[30px] rounded-full bg-[#F5F4F1] hidden md:block"
+                  ></span>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="199"
+                    height="162"
+                    viewBox="0 0 199 162"
+                    fill="none"
+                    class="absolute z-[1] left-[-30px] top-[-30px] hidden md:block"
+                  >
+                    <path
+                      d="M198.065 86.5C198.065 127.921 190.482 161.5 117.913 161.5C45.3455 161.5 0.313965 127.921 0.313965 86.5C0.313965 45.0786 45.3455 0 117.913 0C190.482 0 98.8611 64.7094 198.065 86.5Z"
+                      fill="#F5F4F1"
+                    />
+                  </svg>
+                </div>
+
+                <div class="item-content relative z-[20]">
+                  <span
+                    class="bg-[#9A0C16] absolute top-[-20px] left-[-20px] rounded-full h-[36px] w-[36px] inline-flex md:hidden items-center justify-center font-[800] text-[20px] text-white"
+                    >1</span
+                  >
+                  <span
+                    class="font-[800] text-[10px] mt-[-27px] mb-[10px] pl-[20px] block md:hidden"
+                    >st year</span
+                  >
+                  <h3
+                    class="text-black text-[10px] md:text-[16px] underline md:no-underline md:text-[#9a0c16] font-[800]"
+                  >
+                    Major in Web Development
+                  </h3>
+                  <ul
+                    class="list-disc text-[12px] md:text-[16px] pt-[15px] pl-[15px] font-secondary font-[800]"
+                  >
+                    <li>Created a calculator app</li>
+                    <li>Created a todo-list app</li>
+                    <li>Created a photo gallery webpage</li>
+                    <li>Learned Bootstrap</li>
+                    <li>Learned Bootstrap</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <!-- 2nd Card -->
+            <div
+              class="item w-full px-[15px] md:max-w-[33.33%] mb-[30px] md:mb-0 w-full relative"
+            >
+              <div
+                class="item-wrapper shadow-md shadow-[#333] pt-[30px] shadow-md md:shadow-none min-h-[200px] md:h-[400px] relative bg-[#F5F4F1] p-[30px] rounded-[10px] md:rounded-[20px]"
+              >
+                <div
+                  class="item-header text-center w-full left-0 absolute top-[-30px] text-[24px] font-[800] hidden md:block"
+                >
+                  <span class="relative z-[2] text-[20px] mt-[15px] underline"
+                    >2nd year</span
+                  >
+                  <span
+                    class="block absolute left-[50%] translate-x-[-50%] top-[-40px] w-[150px] h-[150px] rounded-full bg-[#F5F4F1]"
+                  ></span>
+                </div>
+
+                <div class="item-content relative z-[20]">
+                  <span
+                    class="bg-[#9A0C16] absolute top-[-20px] left-[-20px] rounded-full h-[36px] w-[36px] inline-flex md:hidden items-center justify-center font-[800] text-[20px] text-white"
+                    >2</span
+                  >
+                  <span
+                    class="font-[800] text-[10px] mt-[-27px] mb-[10px] pl-[20px] block md:hidden"
+                    >nd year</span
+                  >
+                  <h3
+                    class="text-black text-[10px] md:text-[16px] underline md:no-underline md:text-[#9a0c16] font-[800]"
+                  >
+                    Major in Programming & Information Management
+                  </h3>
+                  <ul
+                    class="list-disc text-[12px] md:text-[16px] pt-[15px] pl-[15px] font-secondary font-[800]"
+                  >
+                    <li>Created a quiz app</li>
+                    <li>Created a basic CRUD App using PHP</li>
+                    <li>Created a photo gallery webpage</li>
+                    <li>Learned Data Structure and Algorithm</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <!-- 3rd Card -->
+            <div
+              class="item w-full px-[15px] md:max-w-[33.33%] mb-[30px] md:mb-0 w-full relative"
+            >
+              <div
+                class="item-wrapper shadow-md shadow-[#333] pt-[30px] shadow-md md:shadow-none min-h-[200px] md:h-[400px] relative bg-[#F5F4F1] p-[30px] rounded-[10px] md:rounded-[20px]"
+              >
+                <div
+                  class="item-header pr-[50px] justify-end w-full absolute top-[-30px] text-[24px] font-[800] hidden md:flex"
+                >
+                  <span
+                    class="relative z-[2] text-[20px] mt-[15px] underline hidden md:block"
+                    >3rd year</span
+                  >
+                  <span
+                    class="block absolute right-[220px] top-[-50px] w-[30px] h-[30px] rounded-full bg-[#F5F4F1]"
+                  ></span>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="199"
+                    height="162"
+                    viewBox="0 0 199 162"
+                    fill="none"
+                    class="absolute z-[1] scale-x-[-100%] right-[30px] top-[-30px]"
+                  >
+                    <path
+                      d="M198.065 86.5C198.065 127.921 190.482 161.5 117.913 161.5C45.3455 161.5 0.313965 127.921 0.313965 86.5C0.313965 45.0786 45.3455 0 117.913 0C190.482 0 98.8611 64.7094 198.065 86.5Z"
+                      fill="#F5F4F1"
+                    />
+                  </svg>
+                </div>
+
+                <div class="item-content relative z-[20]">
+                  <span
+                    class="bg-[#9A0C16] absolute top-[-20px] left-[-20px] rounded-full h-[36px] w-[36px] inline-flex md:hidden items-center justify-center font-[800] text-[20px] text-white"
+                    >3</span
+                  >
+                  <span
+                    class="font-[800] text-[10px] mt-[-27px] mb-[10px] pl-[20px] block md:hidden"
+                    >rd year</span
+                  >
+                  <h3
+                    class="text-black text-[10px] md:text-[16px] underline md:no-underline md:text-[#9a0c16] font-[800]"
+                  >
+                    Major in Integrative Programming and Technologies
+                  </h3>
+                  <ul
+                    class="list-disc text-[12px] md:text-[16px] pt-[15px] pl-[15px] font-secondary font-[800]"
+                  >
+                    <li>
+                      Created an app using Spotify API with chat using socket.io
+                      in Nodejs
+                    </li>
+                    <li>
+                      Created a rewards system for application development
+                      subject in Laravel
+                    </li>
+                    <li>Created a Restful API app using Laravel</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="bg-[#9A0C16] md:bg-[#303030] py-[30px] md:py-[50px]">
+        <div class="container">
+          <h2
+            class="font-[800] text-white text-[20px] md:text-[50px] mb-[20px] md:mb-[50px] lg:mb-[50px]"
+          >
+            Projects
+          </h2>
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-[30px]">
+            <div
+              class="cols-span-1 item-wrapper shadow-md shadow-[#333] pt-[30px] shadow-md md:shadow-none relative bg-[#F5F4F1] p-[30px] rounded-[10px] md:rounded-[20px]"
+            >
+              <h3
+                class="font-[800] mb-[15px] text-[15px] md:text-[23px] underline"
+              >
+                Job Application Form
+              </h3>
+              <div class="relative rounded-[15px] overflow-hidden">
+                <img
+                  src="./assets/proj1.png"
+                  width="500"
+                  height="500"
+                  class="w-full h-full h-[500px] object-cover"
+                />
+                <a
+                  class="text-center absolute top-0 hover:opacity-80 left-0 w-full bg-[#000] bg-opacity-50 h-full flex items-center justify-center text-white font-bold text-[20px]"
+                  href="./job-application-form/"
+                >
+                  <span
+                    class="bg-[#9A0C16] inline-flex gap-[15px] items-center text-white shadow shadow-md md:shadow-none shadow-[#727272] md:px-[30px] px-[15px] py-[3px] md:py-[15px] rounded-[20px] md:rounded-[50px] font-[800] md:font-bold text-[12px] md:text-[20px]"
+                  >
+                    View Project
+                  </span>
+                </a>
+              </div>
+            </div>
+            <div
+              class="cols-span-1 item-wrapper shadow-md shadow-[#333] pt-[30px] shadow-md md:shadow-none relative bg-[#F5F4F1] p-[30px] rounded-[10px] md:rounded-[20px]"
+            >
+              <h3
+                class="font-[800] mb-[15px] text-[15px] md:text-[23px] underline"
+              >
+                Profile Update Form
+              </h3>
+              <div class="relative rounded-[15px] overflow-hidden">
+                <img
+                  src="./assets/proj2.png"
+                  width="500"
+                  height="500"
+                  class="w-full h-full h-[500px] object-cover"
+                />
+                <a
+                  class="text-center absolute top-0 hover:opacity-80 left-0 w-full bg-[#000] bg-opacity-50 h-full flex items-center justify-center text-white font-bold text-[20px]"
+                  href="./profile-update-form/"
+                >
+                  <span
+                    class="bg-[#9A0C16] inline-flex gap-[15px] items-center text-white shadow shadow-md md:shadow-none shadow-[#727272] md:px-[30px] px-[15px] py-[3px] md:py-[15px] rounded-[20px] md:rounded-[50px] font-[800] md:font-bold text-[12px] md:text-[20px]"
+                  >
+                    View Project
+                  </span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section
+        class="py-[30px] md:py-[50px] lg:py-[100px] relative overflow-hidden bg-[#F5F4F1]"
+      >
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="500"
+          height="482"
+          viewBox="0 0 500 482"
+          fill="none"
+          class="absolute top-0 left-[-100px] hidden md:block"
+        >
+          <path
+            d="M446.557 296.71C264.007 346.888 411.109 481.57 224.733 481.57C38.3573 481.57 0 392.414 0 239.699C0 86.9844 218.362 0 404.738 0C591.113 0 446.557 143.995 446.557 296.71Z"
+            fill="#9A0C16"
+            fill-opacity="0.05"
+          />
+        </svg>
+        <div class="container relative">
+          <div class="grid lg:grid-cols-2 gap-[30px]">
+            <div>
+              <h2 class="font-[800] text-[20px] md:text-[50px] mb-[20px]">
+                Contact Us
+              </h2>
+              <p class="text-[12px] md:text-[30px] font-secondary">
+                Let's talk about everything.
+              </p>
+            </div>
+            <div class="hidden lg:block">
+              <h3
+                class="font-[800] text-black opacity-70 mb-[15px] text-[30px]"
+              >
+                Location
+              </h3>
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3925.9875102641854!2d123.95840707512374!3d10.262589468461082!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x33a99af5762be06f%3A0xd4bee3697d587b49!2sCordova%20Public%20College!5e0!3m2!1sen!2sph!4v1725409631770!5m2!1sen!2sph"
+                width="100%"
+                height="133"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+                class="border border-[#ddd]"
+              ></iframe>
+            </div>
+          </div>
+
+          <div
+            class="grid lg:grid-cols-2 gap-[30px] mt-[20px] md:mt-[30px] lg:mt-[50px]"
+          >
+            <div>
+              <div class="flex text-[12px] md:text-[24px]">
+                <span class="font-[800] mr-2">Email:</span>
+                <span
+                  class="font-secondary text-secondary md:text-[#303030] underline md:no-underline font-normal"
+                  >diomenikep@gmail.com
+                </span>
+              </div>
+              <div class="flex text-[12px] md:text-[24px]">
+                <span class="font-[800] mr-2">Contact No:</span>
+                <span
+                  class="font-secondary text-secondary md:text-[#303030] underline md:no-underline font-normal"
+                  >09065641184
+                </span>
+              </div>
+            </div>
+            <div class="hidden lg:block">
+              <h3
+                class="font-[800] text-black opacity-70 mb-[15px] text-[30px]"
+              >
+                Connect with me:
+              </h3>
+              <div class="mt-[30px] flex items-center gap-[10px]">
+                <div class="icon icon-fb w-[43px] h-[43px]"></div>
+                <div class="icon icon-linkedin w-[43px] h-[43px]"></div>
+                <div class="icon icon-github w-[43px] h-[43px]"></div>
+                <div class="icon icon-drupal w-[43px] h-[43px]"></div>
+                <div class="icon icon-youtube w-[43px] h-[43px]"></div>
+              </div>
+            </div>
+          </div>
+          <div class="form-block mt-[30px] leading-[16px] md:leading-normal">
+            <form action="#" class="w-full md:grid grid-cols-2 gap-[30px]">
+              <div>
+                <div
+                  class="form-item mb-[15px] text-[12px] md:text-[24px] lg:text-[30px]"
+                >
+                  <label class=""
+                    >Name <span class="text-secondary">*</span>
+                  </label>
+                  <input
+                    type="text"
+                    class="border border-[#ddd] rounded-[10px] md:rounded-[20px] w-full h-[37px] md:h-[97px] bg-white p-[15px]"
+                  />
+                </div>
+                <div
+                  class="form-item mb-[15px] text-[12px] md:text-[24px] lg:text-[30px]"
+                >
+                  <label class=""
+                    >Email <span class="text-secondary">*</span>
+                  </label>
+                  <input
+                    type="email"
+                    class="border border-[#ddd] rounded-[10px] md:rounded-[20px] w-full h-[37px] md:h-[97px] bg-white p-[15px]"
+                  />
+                </div>
+                <div
+                  class="form-item mb-[15px] text-[12px] md:text-[24px] lg:text-[30px]"
+                >
+                  <label class=""
+                    >Subject <span class="text-secondary">*</span>
+                  </label>
+                  <input
+                    type="text"
+                    class="border border-[#ddd] rounded-[10px] md:rounded-[20px] w-full h-[37px] md:h-[97px] bg-white p-[15px]"
+                  />
+                </div>
+              </div>
+              <div>
+                <div
+                  class="form-item mb-[15px] text-[12px] md:text-[24px] lg:text-[30px]"
+                >
+                  <label class=""
+                    >Message <span class="text-secondary">*</span>
+                  </label>
+                  <textarea
+                    type="text"
+                    class="border border-[#ddd] rounded-[20px] w-full min-h-[150px] md:min-h-[410px] bg-white p-[15px] appearance-none resize-none"
+                  ></textarea>
+                </div>
+              </div>
+              <div class="form-action mt-[20px] md:mt-0">
+                <a
+                  href="#"
+                  class="bg-[#9A0C16] inline-flex gap-[15px] items-center text-white shadow shadow-md md:shadow-none shadow-[#727272] pr-[30px] px-[15px] py-[3px] md:py-[15px] md:pl-[35px] md:pr-[25px] rounded-[20px] md:rounded-[50px] font-[800] md:font-bold text-[12px] md:text-[24px]"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink"
+                    width="32"
+                    height="30"
+                    viewBox="0 0 32 30"
+                    fill="none"
+                    class="w-[20px] md:w-[32px]"
+                  >
+                    <rect
+                      width="31.6593"
+                      height="30"
+                      fill="url(#pattern0_36_93)"
+                    />
+                    <defs>
+                      <pattern
+                        id="pattern0_36_93"
+                        patternContentUnits="objectBoundingBox"
+                        width="1"
+                        height="1"
+                      >
+                        <use
+                          xlink:href="#image0_36_93"
+                          transform="matrix(0.015625 0 0 0.0164892 0 -0.0276549)"
+                        />
+                      </pattern>
+                      <image
+                        id="image0_36_93"
+                        width="64"
+                        height="64"
+                        xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAACXBIWXMAAA7DAAAOwwHHb6hkAAAAGXRFWHRTb2Z0d2FyZQB3d3cuaW5rc2NhcGUub3Jnm+48GgAAA7ZJREFUeJzlmr9rFEEUx5/RPyHGKFjEQghYGSJC2hQqqAGJkqCtrV2sTLTzT9BasVALOy0sLYJRicYcmlJBQW2j1eVjsbPw7m5/zOzO7OxdvnBwt/fmzfvOfmfevNkV2QcApoFV4D3wF+gAS7HjCgpFeot8LB2IHahPANMismg+pyyabA/9AFQgrbF7yH9I4eFI+ruIHM/57+vQDAAwJSKXJCE9V2LeEZFnIvJaRB4U2L3wE10gAFPALeBNwUKWYhu4C5w0bSeAzyVtpmNzHIDl6p1iA1gx6tA+JklSnUYH+KZ+b8XiOABq3OkMX1l3/gswB+ypa3ea5tkfqDfSymce+WPA7b7rzcs/BGnlO5e8+f+duv4pLNPewIKRVn2UkZ+iSfk3QVr1VUje2ISXf5OkVZ+l5I1dGPnHIK36tiXvV/4xSasYrMgb2/rybwNpFYs1eWNfTf5tIq1iciXvJv82klaxOZE3bezkDywAmxakM/feoUH+3n6ypN2Gss/e+wPX6JVJK0ir+KqS75f/ap5hVtUVlbSKrRJ503alr12u/P8pox9GEWPe2TiiDnnTvlz+xvBjhgJ+AY+BZWDcGytLeCBvJ39jvAB0MwYhRRdYB9aAM6HVUZe88WEnf9XgHEnqKxqI4OrwQd74sZN/RsNxYBF4SLIelKFLstO6D8wDlQ9Zyc/zRx39+Nn7A2PADMlmwlYdf4CnwE2XwH2RN77ClL4EUodP8sZf+JMfPKkjAPlmT35Ux4eB68ATQ7QMaWbZ6bveAY7UiMNt9Q8Bqqmj1p1Xfcc5+CyCpTp26tx5088JbDc/sQAcBM4C94CfKth1D77jy98FZhBSdIGJmv4qyT9m0fNSfR8Tkfmqjkiq1tPq0rOqvhqDmQ56TXhUw1f8x15VYBbGFL+pWGhVlb9I3Ckg0jsNxkVkxtVBXfnHHoBXIrKnfl+o4OOqiOh3nZ7XiqhpAG/rpMM68heJrwCR3mkw65IOfaz+bRsA13Q43PIXqZcO68q/NaiSDvFU+rZhCohUS4fDL/8UJBWjLpvXLNqMhvxTuKRDX/IXac8UEHFLh6Mj/xQk5wQaywW2oyV/Eft06FP+rYNNOmRYS18bADf6yM1m2HiVf5sWQZGS6pBhPPlxRVE6HGn5p6DgsDTE6t+2KSCSUx3uC/mL5KfDfSH/FFnpMIT8Rdo5BUQGq8NF2Q/yT0Hy2FxXh/3vI4yu/FOQ/7ruZuzYGgFwnsFH63vAxdixNQbgMvAB2CV5l/mK7z7+A0FZ7YfP6tf+AAAAAElFTkSuQmCC"
+                      />
+                    </defs>
+                  </svg>
+                  Send Inquiry
+                </a>
+              </div>
+            </form>
+          </div>
+
+          <div
+            class="flex md:hidden flex-col gap-[10px] mt-[50px] border-t-[1px] border-[#ddd] pt-[50px]"
+          >
+            <div class="">
+              <h3
+                class="font-[800] text-black opacity-70 mb-[15px] text-[20px]"
+              >
+                Location
+              </h3>
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3925.9875102641854!2d123.95840707512374!3d10.262589468461082!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x33a99af5762be06f%3A0xd4bee3697d587b49!2sCordova%20Public%20College!5e0!3m2!1sen!2sph!4v1725409631770!5m2!1sen!2sph"
+                width="100%"
+                height="133"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+                class="border-[2px] border-[#ddd] bg-white"
+              ></iframe>
+            </div>
+
+            <div class="">
+              <h3 class="font-[800] text-black opacity-70 text-[20px]">
+                Connect with me:
+              </h3>
+              <div class="mt-[10px] flex items-center gap-[10px]">
+                <div class="icon icon-fb w-[30px] h-[30px]"></div>
+                <div class="icon icon-linkedin w-[30px] h-[30px]"></div>
+                <div class="icon icon-github w-[30px] h-[30px]"></div>
+                <div class="icon icon-drupal w-[30px] h-[30px]"></div>
+                <div class="icon icon-youtube w-[30px] h-[30px]"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer
+      class="bg-primary py-[15px] md:py-[50px] text-white text-[12px] md:text-[16px] font-[800]"
+    >
+      <div class="container">
+        <div
+          class="flex flex-wrap justify-center items-center flex-col md:flex-row md:justify-between"
+        >
+          <p>© 2024 Dio.cv. All rights reserved.</p>
+          <p class="opacity-30 text-[10px] md:text-[16px] mt-[5px] md:mt-0">
+            Made with ❤︎ by
+            <a
+              href="https://dio-ddev.vercel.app/"
+              class="underline"
+              target="_blank"
+            >
+              Dio.dev
+            </a>
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://cdn.tailwindcss.com"></script>
   </body>
 </html>
