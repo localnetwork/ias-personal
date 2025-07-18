@@ -1,4 +1,4 @@
-# Diome Nike Potot Webpage for IAS Subject
+# Diome Nike Potot Webpage for PT Subject
 
 - This webpage uses CDN / External link and needs internet to work.
 - This uses TailwindCSS(CSS Framework).

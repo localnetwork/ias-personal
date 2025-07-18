@@ -54,6 +54,18 @@ body {
 .icon-youtube {
   background-image: url("./icons/youtube.svg");
 }
+.main-navigation {
+  transform: translateY(-100%);
+  transition: all ease 0.3s;
+}
+.main-navigation.active {
+  transform: translateY(0);
+  transition: all ease 0.3s;
+}
+
+body.active {
+  overflow: hidden;
+}
 
 @media (max-width: 1535px) {
   .container {
