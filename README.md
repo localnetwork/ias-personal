@@ -8,11 +8,3 @@
 ## Resources
 
 - https://tailwindcss.com/
-
-## Webpage Link:
-
-- https://localnetwork.github.io/portfolio-cv/
-
-## Github Repo Link:
-
-- https://github.com/localnetwork/portfolio-cv
